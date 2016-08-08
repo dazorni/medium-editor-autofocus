@@ -1,0 +1,23 @@
+{
+  "name": "medium-editor-autofocus",
+  "version": "0.1.0",
+  "description": "Autofocus plugin for medium-editor",
+  "main": "src/autofocus.js",
+  "license": "GPL-3.0",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dazorni/medium-editor-autofocus.git"
+  },
+  "keywords": [
+    "medium",
+    "editor",
+    "autofocus"
+  ],
+  "author": "Sebastian Zorn <sebi.zorn@googlemail.com>",
+  "bugs": {
+    "url": "https://github.com/dazorni/medium-editor-autofocus/issues"
+  },
+  "homepage": "https://github.com/dazorni/medium-editor-autofocus#readme"
+}

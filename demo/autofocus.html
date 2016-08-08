@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>MediumEditor - Extension Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.21.0/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.21.0/css/themes/default.min.css" type="text/css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <div id="container">
+      <h1>Medium Editor</h1>
+      <div class="editable">
+        <h2>Gangsta Ispum</h2>
+        <p>Lorem ipsum dolor uhuh ... yih! gangster, check out this adipiscing elizzle. Nullizzle sapien funky fresh, aliquet volutpizzle, we gonna chung ghetto, bow wow wow vizzle, phat. Pellentesque check it out tortor. Sizzle sheezy. Its fo rizzle izzle fo shizzle dapibus turpizzle tempizzle fo shizzle. Maurizzle shiznit fo shizzle izzle turpizzle. My shizz in tortor. Pellentesque crazy rhoncizzle nisi. In uhuh ... yih! shut the shizzle up dictumst. Fo shizzle dapibizzle. Curabitur tellizzle check it out, pretizzle pizzle, ac, eleifend uhuh ... yih!, nunc. Ass suscipit. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle sempizzle velit mah nizzle pizzle.</p>
+        <p>Phasellizzle interdum i saw beyonces tizzles and my pizzle went crizzle tellus. Ut shut the shizzle up adipiscing i'm in the shizzle. Phat fizzle est. I saw beyonces tizzles and my pizzle went crizzle sapizzle ass, ultricizzle shizznit, accumsan bow wow wow, fermentizzle quis, pede. Cool nizzle fo shizzle. Etiam rizzle gizzle. Maurizzle justo. Vestibulizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle pede varizzle nibh shiz commodo. Lorem i'm in the shizzle dolor sizzle tellivizzle, consectetizzle cool elizzle. Sed ac uhuh ... yih!. Quisque mi sem, break it down izzle, check it out a, we gonna chung a, for sure.</p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/medium-editor/5.21.0/js/medium-editor.min.js"></script>
+    <script src="../src/autofocus.js"></script>
+    <script>
+      var editor = new MediumEditor('.editable', {
+          extensions: {
+            'autofocus': new MediumEditorAutofocus()
+          }
+      });
+    </script>
+  </body>
+</html>
