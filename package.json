@@ -1,11 +1,37 @@
 {
   "name": "medium-editor-autofocus",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Autofocus plugin for medium-editor",
-  "main": "src/autofocus.js",
+  "main": "dist/autofocus.js",
   "license": "GPL-3.0",
+  "scripts": {
+    "build": "npm run build:dev && npm run build:prod",
+    "build:dev": "webpack src/Plugin.js dist/medium-editor-autofocus.js --config ./webpack.config.dev.js --progress --colors",
+    "build:prod": "webpack src/Plugin.js dist/medium-editor-autofocus.min.js --config ./webpack.config.prod.js --progress --colors",
+    "test": "karma start --single-run --not-auto-watch karma.config.js"
+  },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-es2015-modules-umd": "^6.12.0",
+    "babel-preset-es2015": "^6.13.2",
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.2.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.8.0",
+    "loader-utils": "^0.2.15",
+    "medium-editor": "^5.21.1",
+    "webpack": "^1.13.2"
+  },
+  "peerDependencies": {
+    "medium-editor": "^5.21.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dazorni/medium-editor-autofocus.git"
