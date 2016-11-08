@@ -1,4 +1,4 @@
-var MediumEditor = require('medium-editor');
+import MediumEditor from 'medium-editor';
 
 const MediumEditorAutofocus = MediumEditor.Extension.extend({
   name: 'autofocus',

@@ -59,9 +59,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var MediumEditor = __webpack_require__(1);
 
-	var MediumEditorAutofocus = MediumEditor.Extension.extend({
+	var _mediumEditor = __webpack_require__(1);
+
+	var _mediumEditor2 = _interopRequireDefault(_mediumEditor);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var MediumEditorAutofocus = _mediumEditor2.default.Extension.extend({
 	  name: 'autofocus',
 
 	  init: function init() {

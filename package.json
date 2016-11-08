@@ -2,7 +2,7 @@
   "name": "medium-editor-autofocus",
   "version": "0.2.1",
   "description": "Autofocus plugin for medium-editor",
-  "main": "dist/autofocus.js",
+  "main": "src/medium-editor-autofocus.js",
   "license": "GPL-3.0",
   "scripts": {
     "build": "npm run build:dev && npm run build:prod",
