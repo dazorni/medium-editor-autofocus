@@ -8,7 +8,12 @@ const MediumEditorAutofocus = MediumEditor.Extension.extend({
       return;
     }
 
-    this.getEditorElements()[0].focus();
+    if(!this.getEditorElements()[0].children.length) {
+      this.getEditorElements()[0].focus();
+    } else {
+      this.base.selectElement(this.getEditorElements()[0].children[0]);
+      MediumEditor.selection.clearSelection(document, true);
+    }
   }
 });
 
