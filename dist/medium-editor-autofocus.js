@@ -74,7 +74,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return;
 	    }
 
-	    this.getEditorElements()[0].focus();
+	    if (!this.getEditorElements()[0].children.length) {
+	      this.getEditorElements()[0].focus();
+	    } else {
+	      this.base.selectElement(this.getEditorElements()[0].children[0]);
+	      _mediumEditor2.default.selection.clearSelection(document, true);
+	    }
 	  }
 	});
 
