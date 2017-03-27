@@ -1,3 +1,4 @@
+[![NPM Version](https://img.shields.io/npm/v/medium-editor-autofocus.svg?style=flat-square)](https://www.npmjs.org/package/medium-editor-autofocus)
 [![Build Status](https://travis-ci.org/dazorni/medium-editor-autofocus.svg?branch=master)](https://travis-ci.org/dazorni/medium-editor-autofocus)
 # medium-editor-autofocus
 
