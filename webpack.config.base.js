@@ -10,6 +10,9 @@ module.exports = {
         library: 'MediumEditorAutofocus',
         libraryTarget: 'umd'
     },
+    externals: {
+        "medium-editor": "medium-editor"
+    },
     resolve: {
         extensions: [
             '',
