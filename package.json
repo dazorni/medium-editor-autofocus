@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "Autofocus plugin for medium-editor",
   "main": "src/Plugin.js",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "scripts": {
     "build": "npm run build:dev && npm run build:prod",
     "build:dev": "webpack src/Plugin.js dist/medium-editor-autofocus.js --config ./webpack.config.dev.js --progress --colors",
